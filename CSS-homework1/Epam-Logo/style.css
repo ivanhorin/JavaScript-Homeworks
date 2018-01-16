@@ -1,0 +1,14 @@
+p.general{
+    font-size:200px;
+    font-weight: 600;
+    font-family: 'source-sans-pro-regular', 'sans-serif', Helvetica, Arial;
+    text-align: center;
+}
+
+span.bracket {
+    color:#39C2D7;
+}
+
+span.text {
+    color:#464547;
+}

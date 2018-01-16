@@ -1,0 +1,92 @@
+img {
+    width: 99%;
+    height: 99%;
+}
+
+
+.header{
+    height: 150px;
+    width: 85%;
+    background-color: yellow;
+    float: right;
+
+}
+
+.navigation{
+    height:650px;
+    width:15%;
+    background-color: greenyellow;
+    float:left;
+}
+
+.main{
+    height: 500px;
+    width: 70%;
+    background-color: aqua;
+    margin: auto;
+    float:left;
+ 
+}
+
+.aside{
+    height:500px;
+    width:15%;
+    background-color: greenyellow;
+    margin: auto;
+    float:left
+
+}
+
+.imgblock{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+}
+
+.articleblock{
+    height:200px;
+    width:100%;
+    background-color: darkorange;
+    float: left;
+}
+
+
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: antiquewhite;
+    float: left;
+    
+}
+
+.article{
+    height: 195px;
+    width: 49%;
+    background-color: skyblue;
+    float: left;
+    margin: 4px;
+
+}
+
+
+.img{
+    background-color: blueviolet;
+    height: 92px;
+    width: 16%;
+    float: left;
+    margin:3px;
+}
+
+.nav1{
+    background-color: red;
+    margin-top: 100px;
+}
+
+.nav2{
+    background-color: aqua;
+}
+
+.nav3 {
+    background-color: bisque
+}
