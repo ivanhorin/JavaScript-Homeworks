@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>found </title>
+</head>
+<body>
+  <h1 class="result">---</div>
+  <script>
+  //Написати функцію, яка буде виводити символи (включаючи пробыли, цифри) які повторюются в строці
+      var testStr="Allamas**  uioo) ge  =="
+      
+  function remember(str) {
+      var repeatableLetters=[];
+      for(i=0;i<str.length;i++){
+          for(j=0;j<str.length;j++){
+              if(str[i]==str[j] && i!=j)
+              {
+                  repeatableLetters.push(str[i]);
+              }
+          }
+      }
+    var uniqueRepeatableLetters = repeatableLetters.filter(function(elem, index, self) {
+    return index === self.indexOf(elem);
+});
+      return uniqueRepeatableLetters;
+}
+    console.log(remember(testStr));
+      
+// remember("apple") => returns ["p"]
+// remember("apPle") => returns []          // "p" != "P"
+// remember("pippi") => returns ["p","i"]
+// remember('Pippi') => returns ["p","i"]
+  </script>
+</body>
+</html>

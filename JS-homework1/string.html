@@ -1,0 +1,65 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Capitalize</title>
+</head>
+<body>
+  <script>
+  // 1. Написати функцію, скорочує строку і додає три крапки 
+      // truncate("рудщ ві віав",3) = "руд..."
+  function truncate(str, maxlength) {
+      var newStr="";
+      for(i=0;i<maxlength;i++){
+          newStr+=str[i]
+      }
+      newStr+="...";
+      str=newStr;
+      return str;
+  }
+      console.log(truncate("lalala papa",4));
+      
+  // 2. Знайти кількість букв "а" в речені "Назва Львів дана місту на честь князя Лева Даниловича, сина засновника Львова Данила Галицького." використовуючи indexOf
+      function findLetterAmount(){
+    var str="Назва Львів дана місту на честь князя Лева Даниловича, сина засновника Львова Данила Галицького.";
+  var target='а';
+  var pos=0;
+  var foundPos=0;
+  var aLetterAmount=0;
+  for(i=0;i<str.length;i++){
+    foundPos=str.indexOf(target,pos);
+    if (foundPos == -1) break;
+    ++aLetterAmount;
+    pos=foundPos+1;
+  }
+  return aLetterAmount;
+      }
+      console.log(indLetterAmount());
+           
+  // 3. Написати функцію, яка буде фільтрувати рядок і видиляти слова "xxxx" i "polityka"
+      function removeWords(){    
+      var str="Mother xxxx 11 xxxx sister polityka 75 xxxx polityka aaa polityka father xxxx brother politika xxxx under.";
+  var target1='xxxx';
+          var target2='polityka';
+  for(i=0;i<str.length;i++){
+    str=str.replace(target1,"");
+    str=str.replace(target2,"");
+  }
+          return str;
+      }
+      console.log(removeWords());
+      
+  // 4. Профільтрувати строку "іва 24 уц ац34434ауку" і виветси тільки цифри
+      function removeLetters(){
+        var str="іва 24 уц ац34434ауку";
+        str=str.replace(/[^0-9]/g, '');
+        return str;
+      }
+      console.log(removeLetters());
+
+      
+  
+  </script>
+</body>
+</html>
