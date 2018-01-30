@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>Some text1 <button>Remove this line</button></li>
+        <li>Some text2 <button>Remove this line</button></li>
+        <li>Some text3 <button>Remove this line</button></li>
+    </ul>
+    <script>
+        //При клыку на кнопку - видаляти рядок.
+        //Зробити універсальний спосіб, який не залежить від кількості рядків
+        $("button").click(function(){
+            $(this).closest('li').hide();
+        })
+    </script>
+</body>
+</html>
